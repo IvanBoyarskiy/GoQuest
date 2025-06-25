@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_accent"
+    tools:context=".Register">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/interbold"
+                android:text="@string/reg"
+                android:textColor="@color/text"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="70dp"
+                android:layout_marginHorizontal="40dp"
+                android:hint="@string/reg_email"
+                android:textColorHint="@color/text_second"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:fontFamily="@font/interregular"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:textColorHint="@color/text_second"
+                android:hint="@string/reg_name"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:fontFamily="@font/interregular"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:textColorHint="@color/text_second"
+                android:hint="@string/reg_password"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:fontFamily="@font/interregular"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_name" />
+
+            <EditText
+                android:id="@+id/reg_password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:textColorHint="@color/text_second"
+                android:hint="@string/reg_password_check"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:fontFamily="@font/interregular"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:alpha="0.8"
+                android:textColor="@color/error"
+                android:text="Если у Вас есть аккаунт GoQuest ->"
+                android:textSize="15sp"
+                android:fontFamily="@font/interregular"
+                android:onClick="toLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_password_check" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="RegUser"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/main_accent"
+                android:text="@string/reg"
+                android:textSize="20sp"
+                android:textColor="@color/main"
+                android:fontFamily="@font/intersemibold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

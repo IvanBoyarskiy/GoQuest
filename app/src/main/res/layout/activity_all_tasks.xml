@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_accent"
+    tools:context=".AllTasks">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Кнопка "Назад" -->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toBack"
+                    android:text="@string/toBack"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Заголовок -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/interbold"
+                    android:text="@string/p1_tasks"
+                    android:textColor="@color/text"
+                    android:textSize="25sp" />
+
+                <!-- Урок 1 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toLesson1"
+                    android:text="@string/lesson1"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Урок 2 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toLesson2"
+                    android:text="@string/lesson2"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Задания к уроку 2 -->
+                <Button
+                    android:id="@+id/task1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask1"
+                    android:text="Задание 1"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask2"
+                    android:text="Задание 2"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask3"
+                    android:text="Задание 3"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <!-- Урок 3 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toLesson3"
+                    android:text="@string/lesson3"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Задания к уроку 3 -->
+                <Button
+                    android:id="@+id/task4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask4"
+                    android:text="Задание 4"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask5"
+                    android:text="Задание 5"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask6"
+                    android:text="Задание 6"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <!-- Урок 4 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toLesson4"
+                    android:text="@string/lesson4"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Задания к уроку 4 -->
+                <Button
+                    android:id="@+id/task7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask7"
+                    android:text="Задание 7"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask8"
+                    android:text="Задание 8"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask9"
+                    android:text="Задание 9"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <!-- Урок 5 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toLesson5"
+                    android:text="@string/lesson5"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+                <!-- Задания к уроку 5 -->
+                <Button
+                    android:id="@+id/task10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask10"
+                    android:text="Задание 10"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask11"
+                    android:text="Задание 11"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/task12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTask12"
+                    android:text="Задание 12"
+                    android:textColor="@color/main"
+                    android:textSize="15sp" />
+
+                <!-- Тест 1 -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/main_accent"
+                    android:fontFamily="@font/intersemibold"
+                    android:onClick="toTest1"
+                    android:text="@string/test1"
+                    android:textColor="@color/main"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

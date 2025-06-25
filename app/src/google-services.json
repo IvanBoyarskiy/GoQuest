@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754874118515",
+    "project_id": "goquest-kime",
+    "storage_bucket": "goquest-kime.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754874118515:android:2d5d0be6140c344592d506",
+        "android_client_info": {
+          "package_name": "com.kime.goquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFN99JRoXYKi-UzWq4d7DNSaiHl3moke8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GoQuest</string>
+    <string name="loading">Загрузка</string>
+    <string name="default_username">Пользователь</string>
+    <string name="toWork">К работе!</string>
+    <string name="allAchievements">Все Достижения:</string>
+    <string name="toBack">Вернуться</string>
+    <string name="reg">Регистрация</string>
+    <string name="login">Вход</string>
+    <string name="reg_email">Введите эл.почту:</string>
+    <string name="reg_name">Введите имя:</string>
+    <string name="reg_password">Введите пароль:</string>
+    <string name="reg_password_check">Повторите пароль:</string>
+    <string name="start">Начать</string>
+    <string name="comic_go">Вперёд ➡</string>
+    <string name="comic_back">⬅ Назад</string>
+    <string name="edit">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="exit">Выйти из аккаунта</string>
+    <string name="p1_tasks">Начало пути</string>
+    <string name="lesson1">Установка Go</string>
+    <string name="lesson2">Переменные и Типы данных</string>
+    <string name="lesson3">Функции</string>
+    <string name="lesson4">Условные операции</string>
+    <string name="lesson5">Циклы</string>
+    <string name="test1">Экзамен</string>
+</resources>

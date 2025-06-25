@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Цвет фона EditText -->
+    <solid android:color="@color/text"/>
+
+    <!-- Закругления -->
+    <corners android:radius="12dp" />
+
+    <!-- Обводка -->
+    <stroke
+        android:width="1dp"
+        android:color="#000000" />
+
+    <!-- Отступы (не обязательны здесь) -->
+    <padding
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp" />
+
+    <!-- Тень (через elevation не сделать в XML, но можно добавить в коде) -->
+</shape>
