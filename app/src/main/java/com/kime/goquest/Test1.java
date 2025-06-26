@@ -44,10 +44,9 @@ public class Test1 extends AppCompatActivity {
 
     private String getExamTask() {
         return "Задание: напишите программу, которая:\n\n" +
-                "1. Объявляет переменную name string = \"Гость\"\n" +
+                "1. Объявляет переменную name string = \"Админ\"\n" +
                 "2. Создаёт функцию greet(), которая выводит \"Добро пожаловать, [name]!\"\n" +
-                "3. Проверяет: если name == \"Админ\", выводит \"Доступ разрешён\"\n" +
-                "4. Использует цикл for от 1 до 5 и выводит \"Попытка [i]\"";
+                "3. Проверяет: если name == \"Админ\", выводит \"Доступ разрешён\"\n";
     }
 
     private void checkExam(String goCode) {
@@ -75,9 +74,7 @@ public class Test1 extends AppCompatActivity {
     }
 
     private boolean isCorrect(String output) {
-        return output.contains("Добро пожаловать, Гость!") &&
-                output.contains("Попытка 1") &&
-                output.contains("Попытка 5");
+        return output.contains("Добро пожаловать, Гость!") && (output.contains("Доступ разрешен") || output.contains("Доступ разрешён"));
     }
 
     public void toBack(View view) {
