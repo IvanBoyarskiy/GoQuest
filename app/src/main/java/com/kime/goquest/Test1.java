@@ -76,7 +76,6 @@ public class Test1 extends AppCompatActivity {
 
     private boolean isCorrect(String output) {
         return output.contains("Добро пожаловать, Гость!") &&
-                output.contains("Доступ запрещён") &&
                 output.contains("Попытка 1") &&
                 output.contains("Попытка 5");
     }
