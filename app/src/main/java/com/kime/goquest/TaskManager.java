@@ -85,6 +85,13 @@ public class TaskManager {
                 "Выведите каждый элемент на экран");
 
         TASK_ANSWERS.put(12, "Go\nJava\nKotlin");
+
+        TASK_DESCRIPTIONS.put(1001, "Задание: напишите программу, которая:\n\n" +
+                "1. Объявляет переменную name string = \"Админ\"\n" +
+                "2. Создаёт функцию greet(), которая выводит \"Добро пожаловать, [name]!\"\n" +
+                "3. Проверяет: если name == \"Админ\", выводит \"Доступ разрешён\"\n");
+
+        TASK_ANSWERS.put(1001, "Добро пожаловать, Админ!\nДоступ разрешён");
     }
 
     public static String getDescription(int taskNumber) {

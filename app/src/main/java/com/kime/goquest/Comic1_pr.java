@@ -45,9 +45,14 @@ public class Comic1_pr extends AppCompatActivity {
         });
 
         btnStart.setOnClickListener(v -> {
-            startActivity(new Intent(Comic1_pr.this, Test1.class));
-            finish();
+            toTask(1001);
         });
+
+    }
+    public void toTask(int num){
+        Intent intent = new Intent(this, Task.class);
+        intent.putExtra("task_number", num);
+        startActivity(intent);
     }
 
     private void updateImage() {
