@@ -79,6 +79,11 @@ public class Task extends AppCompatActivity {
                     SharedPreferences sharedPref = getSharedPreferences("login_settings", Context.MODE_PRIVATE);
                     Database database = new Database();
                     Map<String, Object> userData = new HashMap<>();
+                    if (taskNumber == 1001){
+                        Achievements.addAchievement("004", sharedPref.getString("email", "null").toString());
+                        startActivity(new Intent(this, Comic1_t.class));
+                        finish();
+                    }
 
                    database.getData("users", sharedPref.getString("email", "null").toString(), new Database.FirestoreCallback() {
                         @Override
@@ -95,6 +100,12 @@ public class Task extends AppCompatActivity {
                 } else {
                     textStatus.setText("❌ Результат неверен.");
                     textStatus.setTextColor(getBaseContext().getResources().getColor(android.R.color.holo_red_dark));
+                    if (taskNumber == 1001){
+                        SharedPreferences sharedPref = getSharedPreferences("login_settings", Context.MODE_PRIVATE);
+                        Achievements.addAchievement("004", sharedPref.getString("email", "null").toString());
+                        startActivity(new Intent(this, Comic1_f.class));
+                        finish();
+                    }
                 }
                 buttonSubmit.setEnabled(true);
             });
