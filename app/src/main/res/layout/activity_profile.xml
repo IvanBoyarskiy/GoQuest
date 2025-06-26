@@ -127,8 +127,24 @@
                 android:onClick="LogOut"
                 android:textColor="@color/main"
                 android:textSize="15sp"
+                android:layout_marginBottom="30dp"
                 android:fontFamily="@font/intersemibold"
                 android:text="@string/exit"
+                app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/error"
+                android:onClick="DeleteAcc"
+                android:textColor="@color/main"
+                android:textSize="15sp"
+                android:fontFamily="@font/intersemibold"
+                android:text="@string/deleteAcc"
                 app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />

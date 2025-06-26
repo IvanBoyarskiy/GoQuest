@@ -24,4 +24,5 @@
     <string name="lesson4">Условные операции</string>
     <string name="lesson5">Циклы</string>
     <string name="test1">Экзамен</string>
+    <string name="deleteAcc">Удалить Аккаунт</string>
 </resources>

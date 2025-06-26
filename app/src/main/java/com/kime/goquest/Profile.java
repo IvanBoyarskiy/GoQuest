@@ -98,6 +98,30 @@ public class Profile extends AppCompatActivity {
         startActivity(new Intent(this, Mainlayout.class));
         finish();
     }
+    public void DeleteAcc(View view){
+        show2StartConfirmationDialog();
+    }
+    private void deleteAcc(){
+        SharedPreferences sharedPref = getSharedPreferences("login_settings", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        Database database = new Database();
+        database.deleteData("users", sharedPref.getString("email", "null").toString());
+        database.deleteData("achievements", sharedPref.getString("email", "null").toString());
+        editor.clear();
+        editor.apply();
+        startActivity(new Intent(this, Register.class));
+        finish();
+    }
+
+    private void show2StartConfirmationDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Удалить аккаунт?")
+                .setMessage("Вы уверены, что хотите удалить аккаунт?")
+                .setPositiveButton("Да", (dialog, which) -> deleteAcc())
+                .setNegativeButton("Нет", (dialog, which) -> dialog.dismiss())
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
     private void showStartConfirmationDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Выйти из Аккаунта?")
