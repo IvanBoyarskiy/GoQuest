@@ -74,7 +74,7 @@ public class Test1 extends AppCompatActivity {
     }
 
     private boolean isCorrect(String output) {
-        return output.contains("Добро пожаловать, Гость!") && (output.contains("Доступ разрешен") || output.contains("Доступ разрешён"));
+        return output.contains("Добро пожаловать, Админ!") && (output.contains("Доступ разрешен") || output.contains("Доступ разрешён"));
     }
 
     public void toBack(View view) {
