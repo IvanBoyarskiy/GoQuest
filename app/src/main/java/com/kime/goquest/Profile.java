@@ -16,6 +16,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.Map;
 
 public class Profile extends AppCompatActivity {
@@ -109,6 +112,18 @@ public class Profile extends AppCompatActivity {
         database.deleteData("achievements", sharedPref.getString("email", "null").toString());
         editor.clear();
         editor.apply();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (user != null) {
+            user.delete()
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Log.d("Auth", "User account deleted.");
+                        } else {
+                            Log.e("Auth", "Error deleting account", task.getException());
+                        }
+                    });
+        }
         startActivity(new Intent(this, Register.class));
         finish();
     }
