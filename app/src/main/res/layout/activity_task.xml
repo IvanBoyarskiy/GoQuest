@@ -57,7 +57,7 @@
                     android:id="@+id/editTextGoCode"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:inputType="text|textMultiLine"
+                    android:inputType="textMultiLine"
                     android:gravity="top"
                     android:textColor="@color/main"
                     android:layout_marginBottom="20dp"
