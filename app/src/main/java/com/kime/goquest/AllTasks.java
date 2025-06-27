@@ -178,7 +178,7 @@ public class AllTasks extends AppCompatActivity {
         toTask(12);
     }
     public void toTest1(View view){
-        if (maxtask == 13) {
+        if (maxtask >= 13) {
             startActivity(new Intent(this, Comic1_pr.class));
             finish();
         }
