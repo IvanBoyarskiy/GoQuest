@@ -86,10 +86,10 @@ public class TaskManager {
 
         TASK_ANSWERS.put(12, "Go\nJava\nKotlin");
 
-        TASK_DESCRIPTIONS.put(1001, "Напишите программу на языке Go, которая определяет, является ли число n=7 минимальным среди чисел от 1 до 10.\n" +
+        TASK_DESCRIPTIONS.put(13, "Напишите программу на языке Go, которая определяет, является ли число n=7 минимальным среди чисел от 1 до 10.\n" +
                 "Если n - минимальное, программа должна вывести \"минимум\", в противном случае - \"не минимум\"");
 
-        TASK_ANSWERS.put(1001, "не минимум");
+        TASK_ANSWERS.put(13, "не минимум");
     }
 
     public static String getDescription(int taskNumber) {

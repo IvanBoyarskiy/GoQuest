@@ -45,7 +45,7 @@ public class Comic1_pr extends AppCompatActivity {
         });
 
         btnStart.setOnClickListener(v -> {
-            toTask(1001);
+            toTask(13);
         });
 
     }
